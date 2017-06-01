@@ -5,6 +5,8 @@
  */
 'use strict';
 import React, {Component} from 'react';
+import { Navigator } from 'react-native-deprecated-custom-components';
+import {StackNavigator,} from 'react-navigation';
 import {
     BackAndroid,
     StatusBar,
@@ -22,6 +24,7 @@ import ViewPageDemo from './app/ViewPageDemo'
 import NieJu from './app/NieJu'
 import XiDing from './app/XiDing'
 import TabDemo from './app/TabDemo'
+import XMGMain from './Component/XMGMain'
 
 export default class TestDemo extends Component {
     constructor(props) {
@@ -31,7 +34,7 @@ export default class TestDemo extends Component {
 
     render() {
         return (
-            <TabDemo/>
+            <XMGMain/>
         );
     }
 }
